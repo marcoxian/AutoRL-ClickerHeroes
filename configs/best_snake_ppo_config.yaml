@@ -1,0 +1,15 @@
+algo: PPO
+best_reward: -5.5009999999999994
+environment:
+  frame_stack: 4
+  grid_size: 10
+  img_size: 84
+hyperparameters:
+  batch_size: 128
+  depth: 2
+  ent_coef: 0.0017079312090949156
+  features_dim: 512
+  gamma: 0.9194844041544962
+  learning_rate: 7.830648759067705e-05
+  n_filters_base: 64
+  n_steps: 1024

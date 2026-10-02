@@ -1,0 +1,54 @@
+# ============================================
+# AutoRL Vision Computer - .gitignore
+# ============================================
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# === Entornos Virtuales ===
+venv/
+env/
+.env/
+.venv/
+
+# === Modelos Entrenados (muy pesados ~12MB cada uno) ===
+models/checkpoints/
+models/*.zip
+# Conservar base_save.txt y templates de OpenCV
+!models/base_save.txt
+!models/*.png
+
+# === Logs de Entrenamiento (75MB+ de eventos) ===
+logs/
+
+# === Base de Datos de Optuna ===
+*.db
+
+# === Scratch / Scripts Temporales de Debug ===
+scratch/
+
+# === Imágenes de Debug Sueltas ===
+debug_*.png
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.agents/
+
+# === Sistema Operativo ===
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/

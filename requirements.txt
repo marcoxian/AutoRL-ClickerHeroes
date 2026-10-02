@@ -1,0 +1,23 @@
+# AutoRL Vision Computer - Project Dependencies
+# Phase 1: Gymnasium, PyTorch, Stable-Baselines3, Optuna, OpenCV
+
+# Core Deep Learning & Reinforcement Learning
+torch>=2.0.0
+torchvision>=0.15.0
+gymnasium>=0.29.0
+stable-baselines3>=2.0.0
+optuna>=3.0.0
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=9.5.0
+matplotlib>=3.7.0
+
+# Utilities & Configuration
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Commercial Screen Capture & Virtual Input Control (Prepared for Phase 2 & 3)
+mss>=9.0.0
+pydirectinput>=1.0.4
