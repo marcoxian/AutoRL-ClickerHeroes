@@ -4,6 +4,8 @@
 
 No accede a la memoria del juego. No usa trucos. Ve la pantalla como un humano y aprende a base de prueba y error.
 
+> **🟢 Estado actual:** El agente ya es capaz de **farmear Almas de Héroe y realizar ascensiones de forma completamente desatendida**. Sube de zona, compra mejoras de héroes, usa habilidades, derrota jefes y, cuando se estanca, asciende automáticamente por el portal para acumular Almas de Héroe. Puedes dejarlo funcionando durante horas sin intervención.
+
 ---
 
 ## 🧠 ¿Cómo funciona?
@@ -128,13 +130,14 @@ python evaluate_clicker_heroes.py
 
 ## 📊 Progreso Actual
 
+- ✅ **Farmeo autónomo de Almas de Héroe** — Sube zonas, compra mejoras, mata jefes y asciende solo
 - ✅ Entorno Gymnasium funcional con visión en tiempo real
 - ✅ 12 exploits de Reward Hacking detectados y parcheados
-- ✅ Sistema de ascensión automática (portal)
-- ✅ Detección y cierre automático de popups
-- ✅ Recuperación automática de pestaña incorrecta
+- ✅ Ascensión automática vía portal cuando se estanca (>300 pasos, ≥10 almas)
+- ✅ Detección y cierre automático de popups del juego
+- ✅ Recuperación automática si cambia a pestaña incorrecta
 - ✅ Optimización de hiperparámetros con Optuna (20 trials)
-- 🔄 Entrenamiento en curso (~92K/500K pasos)
+- 🔄 Entrenamiento en curso (~92K/500K pasos) — mejorando estrategia continuamente
 
 ## 📄 Licencia
 
